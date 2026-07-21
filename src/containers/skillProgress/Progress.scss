@@ -1,0 +1,132 @@
+@import "../../_globalColor";
+
+.meter {
+  height: 20px;
+  position: relative;
+  background: $progressBarBackground;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $progressBarSpanBG;
+  position: relative;
+  overflow: hidden;
+}
+.skill {
+  line-height: 3.5vw;
+}
+.skill-bars {
+  font-size: 28px;
+  width: 40%;
+}
+.skills-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.skills-container > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.skills-image > img {
+  margin-left: 80px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* Media Query */
+
+@media (max-width: 1456px) {
+  .skills-bar {
+    line-height: 4rem;
+  }
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skills-bar {
+    line-height: 3rem;
+    margin: 20px;
+  }
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}
+
+.skills-table {
+  margin-top: 1.5rem;
+  border-top: 2px solid #000;
+
+  &.dark-mode {
+    border-top: 2px solid #fff;
+  }
+}
+
+.skills-row {
+  display: flex;
+  padding: 1.25rem 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: inherit;
+  align-items: center;
+
+  &.dark-mode {
+    border-bottom: 1px solid #2d3748;
+  }
+}
+
+.skills-category {
+  flex: 0 0 200px;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #1a202c;
+
+  &.dark-mode {
+    color: #fff;
+  }
+}
+
+.skills-list {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #4a5568;
+  line-height: 1.6;
+  text-align: left;
+
+  &.dark-mode {
+    color: #cbd5e0;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+  }
+
+  .skills-category {
+    flex: none;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .skills-list {
+    font-size: 1rem;
+  }
+}
