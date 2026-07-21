@@ -27,7 +27,7 @@ const greeting = {
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  avatarImage: require("./assets/images/avatar.jpg"),
+  avatarImage: require("./assets/images/avatar.png"),
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -169,7 +169,7 @@ const workExperiences = {
     {
       role: "Unity Developer",
       company: "BonBonGame",
-      companylogo: require("./assets/images/bonbon.jpg"),
+      companylogo: require("./assets/images/bonbon.png"),
       date: "3/2025 – Present",
       desc: "",
       descBullets: [
@@ -184,14 +184,14 @@ const workExperiences = {
     {
       role: "Unity Developer Intership",
       company: "ABI Game Studio",
-      companylogo: require("./assets/images/abi.jpg"),
+      companylogo: require("./assets/images/abi.png"),
       date: "6/2024 – 8/2024",
       desc: "Participated in basic game design tasks."
     },
     {
       role: "Unity Developer Part-time",
       company: "Vicenter Game Studio",
-      companylogo: require("./assets/images/vicenter.jpg"),
+      companylogo: require("./assets/images/vicenter.png"),
       date: "7/2023 – 4/2024",
       desc: "Worked on mobile game development using Unity C#. Focused on gameplay programming, UI flow, bug fixing."
     }
@@ -269,13 +269,13 @@ const bigProjects = {
           "https://www.youtube.com/embed/URknMJUJzMs"
         ],
         screenshots: [
-          require("./assets/images/monopoly_screenshot1.jpg"),
-          require("./assets/images/monopoly_screenshot2.jpg"),
-          require("./assets/images/monopoly_screenshot3.jpg"),
-          require("./assets/images/monopoly_screenshot4.jpg"),
-          require("./assets/images/monopoly_screenshot5.jpg"),
-          require("./assets/images/monopoly_screenshot6.jpg"),
-          require("./assets/images/monopoly_screenshot7.jpg")
+          require("./assets/images/monopoly_screenshot1.png"),
+          require("./assets/images/monopoly_screenshot2.png"),
+          require("./assets/images/monopoly_screenshot3.png"),
+          require("./assets/images/monopoly_screenshot4.png"),
+          require("./assets/images/monopoly_screenshot5.png"),
+          require("./assets/images/monopoly_screenshot6.png"),
+          require("./assets/images/monopoly_screenshot7.png")
         ]
       }
     },
