@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import "./ProjectDetail.scss";
 import {bigProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import {Fade} from "react-reveal";
 
 export default function ProjectDetail({projectId}) {
   const {isDark} = useContext(StyleContext);
@@ -31,12 +30,11 @@ export default function ProjectDetail({projectId}) {
   const {details} = project;
 
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div
-        className={
-          isDark ? "dark-mode project-detail-page" : "project-detail-page"
-        }
-      >
+    <div
+      className={
+        isDark ? "dark-mode project-detail-page" : "project-detail-page"
+      }
+    >
         <div className="project-detail-container">
           {/* Back Button */}
           <div className="back-navigation">
@@ -234,6 +232,5 @@ export default function ProjectDetail({projectId}) {
           )}
         </div>
       </div>
-    </Fade>
   );
 }
