@@ -126,7 +126,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Posts and Telecommunications Institute of Technology",
-      logo: require("./assets/images/ptit.jpg"),
+      logo: require("./assets/images/ptit.png"),
       subHeader: "Information Technology",
       duration: "2020-2025"
     }
@@ -446,13 +446,31 @@ const bigProjects = {
           "Inspector Tooling: Odin Inspector",
           "Gameplay Modules: crossword grid system, letter swipe input, hint/hammer boosters, extra-word system, collection map, daily tasks, tutorial flow"
         ],
+        techNote: {
+          title: "Tech Note – Building the level use Editor Tool",
+          description:
+            "To support scalable content production, I built a custom Level Editor tool directly inside the Unity Editor. This tool allows designers to:",
+          images: [
+            require("./assets/images/wow_editor1.png"),
+            require("./assets/images/wow_editor2.png")
+          ],
+          features: [
+            "Generate crossword levels directly inside Unity from a letter set and word list.",
+            "Validate whether all target words can be built from the available letters.",
+            "Automatically build a crossword grid layout with horizontal and vertical word placement.",
+            "Preview the generated grid before saving.",
+            "Convert crossword layouts into runtime DataWord JSON format.",
+            "Generate and filter extra words for bonus progression.",
+            "Export level JSON files into the project’s LevelData folder.",
+            "Reduce manual level-authoring time and minimize invalid crossword data before runtime."
+          ],
+          conclusion:
+            "This editor dramatically improves workflow efficiency and ensures consistent level quality."
+        },
         videos: [
           "https://www.youtube.com/embed/fEbQhjtbo9A"
         ],
-        screenshots: [
-          require("./assets/images/wow_editor1.png"),
-          require("./assets/images/wow_editor2.png")
-        ]
+        screenshots: []
       }
     },
     {
@@ -682,7 +700,7 @@ const bigProjects = {
     },
     {
       id: "carrom",
-      image: require("./assets/images/carromCard.jpg"),
+      image: require("./assets/images/carromCard.png"),
       projectName: "Carrom",
       projectDesc:
         "Carrom is a physics-based tabletop sports minigame modeled after classic billiard-style board games.",

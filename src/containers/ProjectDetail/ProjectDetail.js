@@ -184,6 +184,75 @@ export default function ProjectDetail({projectId}) {
                 ))}
               </div>
             </div>
+
+            {/* Tech Note Section */}
+            {details.techNote && (
+              <div className="section-card tech-note-card">
+                <h3 className="section-title">{details.techNote.title}</h3>
+                {details.techNote.description && (
+                  <p className="overview-text" style={{marginBottom: "1.2rem"}}>
+                    {details.techNote.description}
+                  </p>
+                )}
+                {details.techNote.images &&
+                  details.techNote.images.length > 0 && (
+                    <div
+                      className="tech-note-images"
+                      style={{
+                        margin: "1.5rem 0",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "1.5rem"
+                      }}
+                    >
+                      {details.techNote.images.map((img, idx) => (
+                        <div
+                          key={idx}
+                          className="tech-note-img-wrapper"
+                          style={{
+                            borderRadius: "12px",
+                            overflow: "hidden",
+                            border: "1px solid rgba(128, 128, 128, 0.2)",
+                            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.08)"
+                          }}
+                        >
+                          <img
+                            src={img.default || img}
+                            alt={`Tech Note ${idx + 1}`}
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                              display: "block"
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                {details.techNote.features &&
+                  details.techNote.features.length > 0 && (
+                    <ul className="contributions-list">
+                      {details.techNote.features.map((feature, idx) => (
+                        <li key={idx} className="contribution-item">
+                          <i
+                            className="fas fa-tools contribution-icon"
+                            style={{color: "#3498db"}}
+                          ></i>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                {details.techNote.conclusion && (
+                  <p
+                    className="overview-text"
+                    style={{marginTop: "1.2rem", fontStyle: "italic"}}
+                  >
+                    {details.techNote.conclusion}
+                  </p>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Media Section: Videos & Screenshots */}
