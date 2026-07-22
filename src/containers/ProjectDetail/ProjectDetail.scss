@@ -11,6 +11,10 @@
     background-color: $darkBackground;
     color: $textColorDark;
   }
+
+  @media (max-width: 768px) {
+    padding: 5rem 1rem 2rem 1rem;
+  }
 }
 
 .project-detail-container {
@@ -72,6 +76,10 @@
     &.dark-mode {
       color: $textColorDark;
     }
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
 
   .project-tagline {
@@ -80,6 +88,10 @@
     max-width: 800px;
     line-height: 1.6;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -224,6 +236,11 @@
   padding: 2.2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
 
   &:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
@@ -393,11 +410,12 @@
 
 .videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -432,11 +450,12 @@
 
 .screenshots-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 

@@ -80,7 +80,6 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -137,7 +136,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 486px;
+  max-height: 800px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
