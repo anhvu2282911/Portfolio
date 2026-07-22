@@ -542,9 +542,7 @@ const bigProjects = {
         },
         contributions: [
           "Developed a complete interactive “singing softbody character” system.",
-          "Multi-Mode Game Management: Engineered the central Game and Level Managers to seamlessly support Local Split-Screen 2-Player, Solo, and Cooperative play.",
           "Softbody & Blendshape Integration: Programmed softbody physics simulation with Obi Solver to handle squash and stretch states. Combined with SkinnedMeshRenderer blendshapes to sync mouth and eyelid shapes with vocal inputs.",
-          "UI/UX & Juice: Built interactive split-screen HUDs, off-screen indicator warnings, and real-time game leaderboards."
         ],
         techStack: [
           "Unity C#",
