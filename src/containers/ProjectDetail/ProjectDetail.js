@@ -88,7 +88,7 @@ export default function ProjectDetail({projectId}) {
           {project.image && (
             <div className="project-main-banner">
               <img
-                src={project.image}
+                src={project.image.default || project.image}
                 alt={project.projectName}
                 className="banner-img"
               />
@@ -221,7 +221,7 @@ export default function ProjectDetail({projectId}) {
                     {details.screenshots.map((screenshot, idx) => (
                       <div key={idx} className="screenshot-wrapper">
                         <img
-                          src={screenshot}
+                          src={screenshot.default || screenshot}
                           alt={`Gameplay Screenshot ${idx + 1}`}
                           className="screenshot-img"
                         />
