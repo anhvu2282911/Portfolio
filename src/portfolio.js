@@ -331,7 +331,9 @@ const bigProjects = {
           "Architectural Patterns: MVC-inspired structure mixed with Component-Based Architecture to separate game data, UI/visual feedback, and core gameplay mechanics.",
           "Behavioral & Structural Patterns: Applied Singleton, State, Observer/Event-Driven Architecture, Factory/Strategy, and Object Pooling to manage game flow, communication, bot progression, and reusable objects."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/jALKBQke4KY"
+        ],
         screenshots: []
       }
     },
@@ -387,7 +389,9 @@ const bigProjects = {
           "Architectural Patterns: Component-Based Architecture mixed with Event-Driven Programming (EventDispatcher) to decouple combat results (Win/Lose events) from direct UI callbacks.",
           "Behavioral & Structural Patterns: Applied Singleton (Managers), Observer (Event System), Joint-based structural linking, and State Pattern (Game States)."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/-gVQnv9qOXk"
+        ],
         screenshots: []
       }
     },
@@ -442,7 +446,9 @@ const bigProjects = {
           "Inspector Tooling: Odin Inspector",
           "Gameplay Modules: crossword grid system, letter swipe input, hint/hammer boosters, extra-word system, collection map, daily tasks, tutorial flow"
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/fEbQhjtbo9A"
+        ],
         screenshots: [
           require("./assets/images/wow_editor1.png"),
           require("./assets/images/wow_editor2.png")
@@ -502,7 +508,9 @@ const bigProjects = {
           "Architectural Patterns: Component-Based Architecture mixed with State-Driven Workflow (FSM) to separate entity behaviors (movement, aiming, flying) from core physics and data structures.",
           "Behavioral & Structural Patterns: Singleton (Managers), Finite State Machine (States), Object Pooling (Projectiles/VFX/Items), and Observer / Event-Driven Architecture."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/B53JOogRp4A"
+        ],
         screenshots: []
       }
     },
@@ -552,7 +560,9 @@ const bigProjects = {
           "Architectural Patterns: Modularity where each blob is split into focused Unity components such as BlobOpera, BlobInput, BlobUI, BlobSound, BlobLip, BlobEye, BlobBreath, and BlobTouge.",
           "Behavioral & Structural Patterns: Singleton (Managers), Observer / Event-Driven Architecture."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/tMEdx8GNyI4"
+        ],
         screenshots: []
       }
     },
@@ -607,7 +617,9 @@ const bigProjects = {
           "Architectural Patterns: Component-Based Architecture combined with Finite State Management to decouple character ragdoll constraints from trap-triggered launch overrides.",
           "Behavioral & Structural Patterns: Singleton, Object Pooling, and State Pattern."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/yOJn7WB39Lo"
+        ],
         screenshots: []
       }
     },
@@ -662,7 +674,9 @@ const bigProjects = {
           "Architectural Patterns: Component-Based Architecture combined with Event-Driven Programming where UI touches are dispatched via actions to control independent rotation components.",
           "Behavioral & Structural Patterns: Singleton, State Pattern."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/aGMtm9zpv-w"
+        ],
         screenshots: []
       }
     },
@@ -718,7 +732,9 @@ const bigProjects = {
           "Architectural Patterns: Component-Based Architecture combined with MVC (Model-View-Controller) separating table physics calculations, and Striker/AI controllers.",
           "Behavioral & Structural Patterns: Singleton, Factory Method, State, and Interface Segregation."
         ],
-        videos: [],
+        videos: [
+          "https://www.youtube.com/embed/5_IiThvpx1E"
+        ],
         screenshots: []
       }
     }
