@@ -26,7 +26,7 @@ const greeting = {
     "Unity Game Developer passionate about creating fun and technically polished 2D/3D games, with expertise in gameplay systems, performance optimization, clean OOP architecture, and cross-platform development."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/drive/folders/19C2Jog6k0PLCSlV02pEDxEQxcMbuvW8q", // Set to empty to hide the button
   avatarImage: require("./assets/images/avatar.png"),
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -880,9 +880,8 @@ const podcastSection = {
 // Resume Section
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
+  subtitle: "Feel free to view my resume",
+  link: "https://drive.google.com/drive/folders/19C2Jog6k0PLCSlV02pEDxEQxcMbuvW8q",
   display: true // Set false to hide this section, defaults to true
 };
 
